@@ -14,7 +14,7 @@ Campos mínimos:
 - `phone` (string, opcional)
 - `created_at`, `updated_at`
 
-### Endpoints (JSON)
+### Endpoints
 - **POST `/api/contacts`** → crear contacto  
   Validaciones: `name` requerido; `email` requerido, formato válido y **único**.
 - **GET `/api/contacts`** → listar contactos (sin paginación obligatoria).
@@ -24,23 +24,17 @@ Campos mínimos:
 
 Errores de validación → **422 Unprocessable Entity**.
 
----
-
 ## Requisitos técnicos (obligatorios)
 - **Laravel 11** + migraciones.
 - **Base de datos**: puedes usar **SQLite** por simplicidad o **PostgreSQL** si lo prefieres.
 - **Al menos 1 feature test** (PHPUnit) cubriendo creación con datos válidos e inválidos (email duplicado, formato inválido, etc.).
 - README breve con instrucciones para instalar y provar.
 
----
-
 ## Entregables
-- Haz un fork del repositorio (copia a tu cuenta GitHub).
+- Haz un fork del repositorio.
 - Trabaja en una branch nueva dentro de tu fork (feature/nombre-candidato).
 - Haz una PR hacia nuestro repo
-- Añadir instrucciones y/o aclaraciones en el README.
-
----
+- Añadir instrucciones y/o aclaraciones en el PR y/o en el README.
 
 ## Instrucciones
 
@@ -56,8 +50,6 @@ make serve
 make test
 
 ```
-
----
 
 ## Notas
 - Mantén el código simple y legible; prefiere claridad a “más features”.
